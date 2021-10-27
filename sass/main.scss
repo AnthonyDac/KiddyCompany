@@ -145,6 +145,7 @@ nav {
             .description {
                 padding: 8px;
                 font-family: $main-police;
+                height: 200px;
                 h3 {
                     margin-top: 5px;
                 }
@@ -240,6 +241,31 @@ footer {
         .service-client {
             display: flex;
             flex-direction: column;
+        }
+    }
+}
+
+@media screen and (max-width : 767px) {
+    .avis {
+
+        .avisContainer {
+            flex-wrap: wrap;
+            width: 100%;
+            .avisContainerCard {
+                width: 45%;
+            }
+        }
+    }
+    footer {
+
+        .containerFooter {
+            flex-wrap: wrap;
+            flex-direction: column;
+            .contact, .partenaires, .service-client {
+                width: 100%;
+                margin-top: 20px;
+                margin-left: 25px;
+            }
         }
     }
 }

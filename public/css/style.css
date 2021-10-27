@@ -129,6 +129,7 @@ nav .nav-bar .logo {
 .avis .avisContainer .avisContainerCard .description {
   padding: 8px;
   font-family: "Montserrat";
+  height: 200px;
 }
 .avis .avisContainer .avisContainerCard .description h3 {
   margin-top: 5px;
@@ -220,6 +221,26 @@ footer .containerFooter .partenaires {
 footer .containerFooter .service-client {
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (max-width: 767px) {
+  .avis .avisContainer {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .avis .avisContainer .avisContainerCard {
+    width: 45%;
+  }
+
+  footer .containerFooter {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  footer .containerFooter .contact, footer .containerFooter .partenaires, footer .containerFooter .service-client {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 25px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
