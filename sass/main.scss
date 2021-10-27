@@ -1,5 +1,5 @@
-$primary-color: #9356DC;
-$secondary-color: #FF79DA;
+$primary-color: #78D7DE;
+$secondary-color: #F29898;
 $main-police: 'Montserrat';
 $background-color: #EAEAEA;
 $paragraph-color: #353535;
@@ -20,13 +20,226 @@ html
 *
 {
     margin: 0;
+    padding: 0;
 }
 body
 {
-    position: relative;
+    background: $alternative-background;
     margin: 0;
     padding: 0;
-    margin: auto;
-    height: auto;
     width: 100%;
+}
+
+nav {
+    width: 100%;
+    background: white;
+    .nav-bar {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        .nav-bar-btn {
+            position: absolute;
+            left: 1%;
+            a {
+                color: rgba(0,0,0,0.5);
+                font-family: $main-police;
+                margin-left: 20px;
+                font-size: 16px;
+                padding: 10px;
+                border: 2px solid $secondary-color;
+                border-radius: 15px;
+                transition-duration: 0.5s;
+                &:hover {
+                    border: 2px solid transparent;
+                    border-bottom: 2px solid $secondary-color;
+                    border-top: 2px solid rgba(0,0,0,0.1);
+                    border-left: 2px solid rgba(0,0,0,0.1);
+                    border-right: 2px solid rgba(0,0,0,0.1);
+                    transition-duration: 0.5s;
+                    cursor: pointer;
+                    color: $primary-color;
+                }
+            }
+        }
+        .logo {
+            width: 115px;
+            padding: 5px 0;
+        }
+    }
+}
+.banner {
+    box-shadow: inset 0px 10px 13px 5px rgba(0,0,0,0.13);
+    border-bottom: 5px solid $primary-color;
+    width: 100%;
+    height: 500px;
+    background-image: url('http://cuphzhw.cluster029.hosting.ovh.net/public/img/background-min.png');
+    background-position: center;
+    background-size: cover;
+    background-position-y: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: $main-police;
+    color: white;
+    text-align: center;
+    h2 {
+        
+    }
+    p {
+        margin-top: 10px;
+    }
+    .outer {
+        font-size: 30px;
+    }
+}
+.banner2 {
+    box-shadow: inset 0px 10px 13px 5px rgba(0,0,0,0.13);
+    width: 100%;
+    height: 500px;
+    background-image: url('http://drakary.cluster030.hosting.ovh.net/public/img/pexels-lina-kivaka-1741231.jpg');
+    background-position: center;
+    background-size: cover;
+    background-position-y: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: $main-police;
+    color: white;
+    text-align: center;
+    h2 {
+        
+    }
+    p {
+        margin-top: 10px;
+    }
+    .outer {
+        font-size: 30px;
+    }
+}
+.avis {
+    width: 100%;
+    .avisContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 50px 0;
+        .avisContainerCard {
+            width: 25%;
+            margin: 30px 0;
+            box-shadow: $softshadowing;
+            border-radius: 25px;
+            overflow: hidden;
+            img {
+                width: 100%;
+            }
+            .description {
+                padding: 8px;
+                font-family: $main-police;
+                h3 {
+                    margin-top: 5px;
+                }
+                p {
+                    font-style: italic;
+                    margin-top: 10px;
+                    color: rgba(0,0,0,0.7);
+                }
+                .liner {
+                    margin: 2px 5px;
+                    height: 6px;
+                    width: 60px;
+                    background-color: $secondary-color;
+                }
+            }
+            .stars {
+                color: #e9c46a;
+                margin-top: 10px;
+                padding: 8px;
+                i {
+
+                }
+            }
+        }
+    }
+}
+.buttonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    button {
+        color: #FFEDB2;
+        font-family: $main-police;
+        background-color: $secondary-color;
+        font-size: 20px;
+        padding: 10px;
+        border: 2px solid transparent;
+        border-radius: 15px;
+        transition-duration: 0.5s;
+        &:hover {
+            border: 2px solid transparent;
+            border-bottom: 2px solid $primary-color;
+            border-top: 2px solid rgba(0,0,0,0.1);
+            border-left: 2px solid rgba(0,0,0,0.1);
+            border-right: 2px solid rgba(0,0,0,0.1);
+            transition-duration: 0.5s;
+            cursor: pointer;
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    border-top: $secondary-color 6px solid;
+    .containerFooter {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color:$primary-color;
+        padding: 40px 0;
+        i {
+            color: #FFEDB2;
+            margin-right: 5px;
+        }
+        .footerTitle {
+            color: $paragraph-color;
+            font-family: $main-police;
+        }
+        .footerRedirect {
+            font-family: $main-police;
+            margin-top: 10px;
+            transition-duration: 1s;
+            &:hover i {
+                transform: rotate(360deg);
+                transition-duration: 1s;
+                cursor: pointer;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .contact {
+            display: flex;
+            flex-direction: column;
+        }
+        .partenaires {
+            display: flex;
+            flex-direction: column;
+        }
+        .service-client {
+            display: flex;
+            flex-direction: column;
+        }
+    }
 }

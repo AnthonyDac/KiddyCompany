@@ -4,15 +4,222 @@ html {
 
 * {
   margin: 0;
+  padding: 0;
 }
 
 body {
-  position: relative;
+  background: #F6F6F6;
   margin: 0;
   padding: 0;
-  margin: auto;
-  height: auto;
   width: 100%;
+}
+
+nav {
+  width: 100%;
+  background: white;
+}
+nav .nav-bar {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+nav .nav-bar .nav-bar-btn {
+  position: absolute;
+  left: 1%;
+}
+nav .nav-bar .nav-bar-btn a {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Montserrat";
+  margin-left: 20px;
+  font-size: 16px;
+  padding: 10px;
+  border: 2px solid #F29898;
+  border-radius: 15px;
+  transition-duration: 0.5s;
+}
+nav .nav-bar .nav-bar-btn a:hover {
+  border: 2px solid transparent;
+  border-bottom: 2px solid #F29898;
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  border-left: 2px solid rgba(0, 0, 0, 0.1);
+  border-right: 2px solid rgba(0, 0, 0, 0.1);
+  transition-duration: 0.5s;
+  cursor: pointer;
+  color: #78D7DE;
+}
+nav .nav-bar .logo {
+  width: 115px;
+  padding: 5px 0;
+}
+
+.banner {
+  box-shadow: inset 0px 10px 13px 5px rgba(0, 0, 0, 0.13);
+  border-bottom: 5px solid #78D7DE;
+  width: 100%;
+  height: 500px;
+  background-image: url("http://cuphzhw.cluster029.hosting.ovh.net/public/img/background-min.png");
+  background-position: center;
+  background-size: cover;
+  background-position-y: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat";
+  color: white;
+  text-align: center;
+}
+.banner p {
+  margin-top: 10px;
+}
+.banner .outer {
+  font-size: 30px;
+}
+
+.banner2 {
+  box-shadow: inset 0px 10px 13px 5px rgba(0, 0, 0, 0.13);
+  width: 100%;
+  height: 500px;
+  background-image: url("http://drakary.cluster030.hosting.ovh.net/public/img/pexels-lina-kivaka-1741231.jpg");
+  background-position: center;
+  background-size: cover;
+  background-position-y: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat";
+  color: white;
+  text-align: center;
+}
+.banner2 p {
+  margin-top: 10px;
+}
+.banner2 .outer {
+  font-size: 30px;
+}
+
+.avis {
+  width: 100%;
+}
+.avis .avisContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 0;
+}
+.avis .avisContainer .avisContainerCard {
+  width: 25%;
+  margin: 30px 0;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  overflow: hidden;
+}
+.avis .avisContainer .avisContainerCard img {
+  width: 100%;
+}
+.avis .avisContainer .avisContainerCard .description {
+  padding: 8px;
+  font-family: "Montserrat";
+}
+.avis .avisContainer .avisContainerCard .description h3 {
+  margin-top: 5px;
+}
+.avis .avisContainer .avisContainerCard .description p {
+  font-style: italic;
+  margin-top: 10px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.avis .avisContainer .avisContainerCard .description .liner {
+  margin: 2px 5px;
+  height: 6px;
+  width: 60px;
+  background-color: #F29898;
+}
+.avis .avisContainer .avisContainerCard .stars {
+  color: #e9c46a;
+  margin-top: 10px;
+  padding: 8px;
+}
+.buttonContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.buttonContainer button {
+  color: #FFEDB2;
+  font-family: "Montserrat";
+  background-color: #F29898;
+  font-size: 20px;
+  padding: 10px;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  transition-duration: 0.5s;
+}
+.buttonContainer button:hover {
+  border: 2px solid transparent;
+  border-bottom: 2px solid #78D7DE;
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  border-left: 2px solid rgba(0, 0, 0, 0.1);
+  border-right: 2px solid rgba(0, 0, 0, 0.1);
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  border-top: #F29898 6px solid;
+}
+footer .containerFooter {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #78D7DE;
+  padding: 40px 0;
+}
+footer .containerFooter i {
+  color: #FFEDB2;
+  margin-right: 5px;
+}
+footer .containerFooter .footerTitle {
+  color: #353535;
+  font-family: "Montserrat";
+}
+footer .containerFooter .footerRedirect {
+  font-family: "Montserrat";
+  margin-top: 10px;
+  transition-duration: 1s;
+}
+footer .containerFooter .footerRedirect:hover i {
+  transform: rotate(360deg);
+  transition-duration: 1s;
+  cursor: pointer;
+}
+footer .containerFooter .footerRedirect:hover {
+  cursor: pointer;
+}
+footer .containerFooter .contact {
+  display: flex;
+  flex-direction: column;
+}
+footer .containerFooter .partenaires {
+  display: flex;
+  flex-direction: column;
+}
+footer .containerFooter .service-client {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */
